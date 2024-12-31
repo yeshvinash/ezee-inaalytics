@@ -1,0 +1,8 @@
+.customPieChart-wrap {
+  width: 153px;
+  height: auto;
+}
+.customPieChart-wrap canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
