@@ -50,6 +50,7 @@ html {
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -107,6 +108,8 @@ h6,
 a {
   outline: none;
   text-decoration: none;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
   transition: 0.3s all;
 }
 ul,
@@ -121,36 +124,41 @@ ol {
   padding: 16px;
   border-radius: 4px;
   background-color: var(--white);
+  -webkit-box-shadow: 0px 2px 4px 0px #22222229;
   box-shadow: 0px 2px 4px 0px #22222229;
 }
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--light-skyblue-tint-1);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--blue);
-} */
 .d-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .d-align-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .d-align-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .text-ellipsis {
@@ -159,12 +167,4 @@ ol {
   overflow: hidden;
 }
 
-/* media queries */
-/* @media screen and (min-width: 1366px) {
-  .container {
-    max-width: 1280px;
-  }
-} */
-
-@media screen and (max-width: 1365px) {
-}
+/* default css end */
